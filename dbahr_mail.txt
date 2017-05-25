@@ -1,4 +1,14 @@
-﻿
+﻿===================
+***衛星雲圖***
+===================
+您好，
+
+本資料庫油氣象局定期收集的衛星資料僅有黑白圖像，
+若您需要彩色，
+我們另有從氣象局收集，
+可給予您的起迄時間，以便於幫您找資料，
+
+謝謝
 
 ===================
 ***購買氣象局資料***
@@ -23,7 +33,7 @@ http://e-service.cwb.gov.tw/wdps/
 
 
 ===================
-***提供客製化下載連結***
+***提供客製化下載連結1***
 ===================
 您好，
 
@@ -31,6 +41,18 @@ http://e-service.cwb.gov.tw/wdps/
 https://drive.narlabs.org.tw/navigate/s/55D22381A687436387249DC1B7A56994GUY
 因系統限制檔案僅存放7天，請於7日內取檔，謝謝。
 相關測站資訊可參考:http://e-service.cwb.gov.tw/wdps/obs/state.htm
+
+謝謝
+
+
+===================
+***提供客製化下載連結2***
+===================
+您好，
+
+請您使用連結下載，連結如下：
+https://dbahr.narlabs.org.tw/_files/2017052211300817918.zip
+因系統限制檔案僅存放7天，請於7日內取檔，謝謝。
 
 謝謝
 
@@ -88,6 +110,8 @@ https://dbahr.narlabs.org.tw/pages/html/doc/IdentityInfo.html
 基於本中心支援學術研究以及非營利的性質，
 因而提供給相關人員資料，
 若身分別為一般民眾或公司行號，
+那依照本資料庫規範:
+https://dbahr.narlabs.org.tw/pages/html/doc/IdentityInfo.html
 是無法提供的，
 和您說明一下!!
 
@@ -103,6 +127,19 @@ https://dbahr.narlabs.org.tw/pages/html/doc/IdentityInfo.html
 若有使用上疑問歡迎提出，謝謝
 
 大氣水文研究資料庫敬上
+
+===================
+***變更密碼***
+===================
+您好，
+
+登入後點依照以下步驟即可更改密碼:
+帳號管理->基本資料->變更密碼
+
+若有使用上疑問歡迎提出，謝謝
+
+大氣水文研究資料庫敬上
+
 
 ===================
 ***測站說明***
@@ -163,7 +200,10 @@ https://dbahr.narlabs.org.tw/_images/pages/UploadInfoSOP.png
 大氣水文資料庫敬上
 
 (3)
-[重要公告] 2017/04/26(三) 中午12:00~下午14:00進行網路設備維護作業(已解決)
+[重要公告] 2017/05/19(五) 中午12:00~下午14:00進行網路設備維護作業
+因設備例行性檢測，於5月19日(五) 中午12:00~下午14:00本資料庫相關功能將暫停使用。
+造成不便，敬請見諒，
+若有相關問題，可以使用客服中心與客服人員聯絡。
 
 (4)
 [重要公告] 註冊系統異常
@@ -279,6 +319,19 @@ NCEP 資料更新至2016年，敬祝各會員研究愉快。
 擴充案需求討論
 
 -----
+
+Dear user,
+
+Thanks for your inquiry,
+if you want to use our database,
+you can apply account that you can use our data.
+
+Please advise if necessary.
+
+Sincerely,
+
+Data Bank for Atmosphere & Hydrologic Research
+
 
 
 *****************************************
