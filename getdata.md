@@ -6,7 +6,7 @@
 	- [路徑](#%E8%B7%AF%E5%BE%91)
 - [抓網路資料](#%E6%8A%93%E7%B6%B2%E8%B7%AF%E8%B3%87%E6%96%99)
 	- [海象](#%E6%B5%B7%E8%B1%A1)
-	- [開放資料](#%E9%96%8B%E6%94%BE%E8%B3%87%E6%96%99)
+	- [開放資料\(10min rain、預報降雨\)](#%E9%96%8B%E6%94%BE%E8%B3%87%E6%96%9910min-rain%E3%80%81%E9%A0%90%E5%A0%B1%E9%99%8D%E9%9B%A8)
 	- [文化大氣\(http://twister.atmos.pccu.edu.tw/ssl/sslbank/\)](#%E6%96%87%E5%8C%96%E5%A4%A7%E6%B0%A3httptwisteratmospccuedutwsslsslbank)
 	- [雷達閃電](#%E9%9B%B7%E9%81%94%E9%96%83%E9%9B%BB)
 	- [雨量圖](#%E9%9B%A8%E9%87%8F%E5%9C%96)
@@ -34,7 +34,7 @@
 ## 海象
 	get-mmc.sh
 
-## 開放資料
+## 開放資料(10min rain、預報降雨)
 	get-opendata.sh
 
 ## 文化大氣(http://twister.atmos.pccu.edu.tw/ssl/sslbank/)
