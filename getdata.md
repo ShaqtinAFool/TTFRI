@@ -22,14 +22,16 @@
 
 # 抓系集資料
 ## 層場圖
-	scp -r tyttfri@*.*.*.91:/data/archive/image/2015 ./Image/  
+	scp -r tyttfri@*.*.*.91:/data/archive/image/2015 ./Image/  	
 
 ## 雨量(測站、網格)
-	待確認，可能會有路徑干擾  
-	scp -r tyttfri@*.*.*.91:/data/archive/data/2015 ./Rain/  
+	scp -r tyttfri@*.*.*.91:/data/archive/data/2015 ./Rain/ 
+ 	find ./*/*/* -name "*-TRK-*" | xargs rm
 
 ## 路徑
-
+	scp -r tyttfri@*.*.*.91:/data/archive/data/2015 ./Track/ 
+	find ./*/*/* -name "*-RAN-*" | xargs rm
+	
 # 抓網路資料
 ## 海象
 	get-mmc.sh
