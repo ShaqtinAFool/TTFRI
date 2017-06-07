@@ -49,11 +49,29 @@
 **[回到目錄](#目錄)**
 
 # 2.例行作業
+- [ ] 資料上架SOP
+	+ 上架：
+		+ Online：
+			(1) 在終端機輸入"java -jar ycl14jul03a.jar"
+			(2) 跳出一個GUI介面，再按"分析服務"->"啟動"
+			(3) 使用管理者帳號到網站的"資料管理"->"新進資料准核"
+			(4) 依照"資料單位"按下"全部開放即可"
+		+ Offline：
+			收即到資料後，存放在備援機(175)裡面，分別再兩個資料夾底下
+			+ /ttfriNewDBAR/ImportData   (親自索取的目錄)
+			+ /ttfriNewDBAR/GetTeamRData (索取TeamR的目錄)
+			+ /ttfriNewDBAR/GetWebData   (自動抓資料的目錄)
+			+ 外接硬碟 (編號:DBAR-S-TO-001)
+	+ 歸檔：
+	+ 紀錄：http://ttfri.ragic.com/default/iso/2
+	+ 備份：
+		+ 174：/share2/ParsedFiles
+		+ 175：/ttfriNewDBAR/ParsedFiles
+		+ 外接硬碟
+
 - [x] 工作日誌：http://ttfri.ragic.com/default/iso/4#!/4
 - [x] 會議記錄：http://ttfri.ragic.com/default/forms2/4
-- [ ] 資料清單 	
-	+ TeamR清單：
-	+ 資料概況：http://ttfri.ragic.com/default/iso/6
+- [x] 資料清單：http://ttfri.ragic.com/default/iso/6
 * 個案定義彙整：\\142NAS\Public\14.資料庫\DB-找個案
 	- [ ] 梅雨鋒面 
 		* 定義：
@@ -68,34 +86,34 @@
 **[回到目錄](#目錄)**
 
 # 3. 主機概況 
-* 正式機(IP:174)
-	+ Windows Server 2008 R2 Standard SP1
+* 正式機
+	+ Windows Server 2008 R2 Standard SP1 (IP:174)
 		- 處理器：Inter(R) Xeon(R) CPU E5-2630 v3 @ 2.4GHz
 		- 記憶體：72 GB(僅支援至 32GB)
 		- 硬碟：600 GB
-	+ SUSE Linux Enterprise Server 12
+	+ SUSE Linux Enterprise Server 12 (IP:178)
 		- 處理器：Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.4GHz
 		- 記憶體：72 GB
 		- 硬碟：13 TB
 	+ SQL Server
 		- 版本：Microsoft SQL Server 2014 - 12.0.4100.1 (X64) Standard Edition (64-bit)
-* 備援機(IP:177)
-	+ Windows Server 2012 Standard
+* 備援機
+	+ Windows Server 2012 Standard (IP:177)
 		- 處理器：Inter(R) Xeon(R) CPU E5-2620 v2 @ 2.1GHz
 		- 記憶體：40 GB
 		- 硬碟：600 GB
-	+ Linux CentOS release 6.5
+	+ Linux CentOS release 6.5 (IP:175)
 		- 處理器：Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.1GHz
 		- 記憶體：40 GB
 		- 硬碟：17 TB
 	+ SQL Server
 		- 版本：Microsoft SQL Server 2012 (SP1) - 11.0.3128.0 (X64)	Standard Edition (64-bit)
-* 測試機(IP:139)
-	+ Windows Server 
+* 測試機
+	+ Windows Server Server 2008 R2 Standard SP1 (IP:139)
 		- 處理器：Inter(R) Xeon(R) CPU E5-2620 v2 @ 2.1GHz
 		- 記憶體：40 GB(僅支援至 32GB)
 		- 硬碟：560 GB
-	+ CentOS release 6.4 (Final)
+	+ CentOS release 6.4 (Final) (IP:141)
 		- 處理器：Intel(R) Xeon(R) CPU E5-2620 0 @ 2.0GHz
 		- 記憶體：40 GB
 		- 硬碟：800 GB

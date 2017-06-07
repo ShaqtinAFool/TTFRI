@@ -44,7 +44,11 @@ password: 123456789
 ### 調整與新增功能標籤、增加位置瀏覽列並調整頁面一致性
 - [ ] 調整網站內標籤列位置，主要功能列於原有的標籤列；將標籤列增加本次所新增之資料庫功能。
 - [ ] 「訊息公告」、「關於我們」、「客服中心」和「會員中心」等系統服務相關功能列於頁面一角，預設放置於頁面右上角
-	![訊息公告](https://drive.google.com/file/d/0B_3bp4JXHCwGcUVOSEhmZG1EdDg/view?usp=sharing)
+	- [訊息公告](https://drive.google.com/open?id=0B_3bp4JXHCwGcUVOSEhmZG1EdDg)
+	- [關於我們](https://drive.google.com/open?id=0B_3bp4JXHCwGS191UDB6bjVYSnM)
+	- [客服中心](https://drive.google.com/open?id=0B_3bp4JXHCwGTV84b3B3RjBlQnM)
+	- [會員中心](https://drive.google.com/open?id=0B_3bp4JXHCwGYzl1ZFRQV1NreHM)
+	- [網站地圖](https://drive.google.com/open?id=0B_3bp4JXHCwGdEhQVWVRaHB4cWM)
 - [ ] 新增顯示位置瀏覽列(目前位置)於頁面中，預設放置於頁面左上角
 - [ ] 調整全系統網站頁面的一致性，如：會員身分提示列於標籤列右方、標題列置中等
 
@@ -118,4 +122,8 @@ password: 123456789
 - [ ] 圖資下載條件設定應包含日期、圖資種類，其中日期範圍需有上限值，預設上限為一個月
 
 # 開發項目的功能相容一致性 
+- [ ] 透過ycl14jul03a.jar上傳檔案至Linux機器
+- [ ] 下載紀錄
+- [ ] 帳號登入紀錄
+
 # 教育訓練
