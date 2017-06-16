@@ -23,8 +23,17 @@
 * Web：http://140.112.201.139/
 * 流程
 	- [ ] 因入侵關係，重灌兩台主機
-		* Windows還原完畢(server序號、sql序號ok、資料表還原中…)
+		* Windows還原完畢(server序號、sql序號ok，拿原本備援機的)
 		* Linux安裝完畢
+			* 設置iptables只允許主機 193.180.177.13 連接到SSH服務，在嘗試三次失敗登陸後，iptables允許該主機每分鐘嘗試一次登陸
+				* iptables -A INPUT -p tcp -s 193.180.177.13 -m state --syn --state NEW --dport 22 -m limit --limit 1/minute --limit-burst 1 -j ACCEPT
+			* 想要連線進入本機 port 21 的封包都抵擋掉
+				* iptables -A INPUT -i eth0 -p tcp --dport 21 -j DROP
+			* 想連到我這部主機的網芳 (upd port 137,138 tcp port 139,445) 就放行
+				* iptables -A INPUT -i eth0 -p udp --dport 137:138 -j ACCEPT
+				* iptables -A INPUT -i eth0 -p tcp --dport 139 -j ACCEPT
+				* iptables -A INPUT -i eth0 -p tcp --dport 445 -j ACCEPT
+
 	- [ ] 廠商防護出現問題...
 	- [ ] UI/Bug調整：https://goo.gl/0kA36I
 		* 還有3個bug項目需處理
@@ -87,12 +96,20 @@
 - [ ] 個案定義彙整：\\142NAS\Public\14.資料庫\DB-找個案
 	+ [ ] 梅雨鋒面 
 		+ 定義：
+			+ 以JMA地面天氣圖為準，當梅雨鋒面進入20°~27°N、119°~123°E的區域，且停留時間大於12小時，定義為影響台灣之梅雨鋒個案
+			+ 若鋒面北抬又南下之情形，假如仍處於影響台灣之範圍內，則以CWB日雨量為準，日雨量連續超過50mm/day視為同一個案，否則為不同個案
+			+ 參考紅外線雲圖與逐時雨量圖，排除午後對流之事件
+			+ 註:若無JMA地面天氣圖，會以CWB地面天氣圖代替
 		+ 統計時間：2010-2016
 	+ [ ] 午後陣雨 
 		+ 定義：
+			+ 當降雨在12-22點之間達新版大雨標準時，認為當日發生午後對流
+			+ 參考梅雨鋒面個案和颱風個案，排除兩者的影響
+			+ 參考衛星雲圖，排除外海移入對流影響
+			+ 若衛星雲圖上發生午後對流，但周圍有雲系存在時，則在備註填寫天氣狀況
 		+ 統計時間：2012-2016
 	+ [ ] 寒流 
-		+ 定義：
+		+ 定義：北市日低溫低於10°C以下
 		+ 統計時間：2000-2015
 
 **[回到目錄](#目錄)**
