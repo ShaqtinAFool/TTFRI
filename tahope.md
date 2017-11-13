@@ -56,7 +56,6 @@
 - 西南氣流實驗(IOP-8 個案)觀測分析與數值模擬：雲微物理結構特徵及參數法方案比較(2012)：http://hdl.handle.net/11296/ndltd/13225268599562854931
 - 西南氣流實驗期間之降水特徵與相關環境型態(2009)：http://hdl.handle.net/11296/ndltd/33778324434210900815
 
-
 ## AMS(國外)
 - Mesoscale Analysis of Heavy Rainfall Episodes from SoWMEX/TiMREX [2012]：https://doi.org/10.1175/JAS-D-11-0120.1
 - The Kinematic and Microphysical Characteristics and Associated Precipitation Efficiency of Subtropical Convection during SoWMEX/TiMREX [2015]：https://doi.org/10.1175/MWR-D-14-00081.1
@@ -89,7 +88,7 @@
 - 颱風路徑與結構同化研究─ 系集卡爾曼濾波器 [2009]：http://hdl.handle.net/11296/ndltd/02764239529288732135
 - DOTSTAR 策略性觀測投落送資料對於颱風路徑模擬影響研究 [2009]：http://hdl.handle.net/11296/ndltd/01992705580733915720
 - 上層海洋熱力結構對颱風強度變化之影響─ 海氣耦合模式實驗研究 [2010]：http://hdl.handle.net/11296/ndltd/33055328010207233107
-- ASCAT 衛星散射儀反演風場於 熱帶氣旋環境下之誤差特徵 [2011]：
+- ASCAT 衛星散射儀反演風場於 熱帶氣旋環境下之誤差特徵 [2011]：http://ls.pccu.edu.tw/symposium2011/download/symposium2011_20.pdf
 - 颱風策略性觀測理論之特徵分析與驗證—駛流敏感共軛向量及系集變換卡爾曼濾波器 [2011]：http://hdl.handle.net/11296/ndltd/66674219653074681969
 - 凡那比颱風(2010)降雨機制探討 [2012]：http://hdl.handle.net/11296/ndltd/26530685041247376430
 - 樂克颱風(2008)降雨系集模擬與分析-卡爾曼濾波器資料同化 [2012]：http://hdl.handle.net/11296/ndltd/28442083317876202715
@@ -111,7 +110,7 @@
 - Observational Occurrence of Tropical Cyclone Ducts from GPS Dropsonde Data [2013]：http://journals.ametsoc.org/doi/pdf/10.1175/JAMC-D-11-0256.1
 - Assimilation of Tropical Cyclone Observations: Improving the Assimilation of TCVitals, Scatterometer Winds, and Dropwindsonde Observations [2015]：http://journals.ametsoc.org/doi/pdf/10.1175/MWR-D-14-00158.1
 - Concentric eyewall formation in Typhoon Sinlaku (2008) – Part II: Axisymmetric dynamical processes [2012]：http://journals.ametsoc.org/doi/pdf/10.1175/JAS-D-11-0114.1
-- Assimilation of Tropical Cyclone Observations: Improving the Assimilation of TCVitals, Scatterometer Winds, and Dropwindsonde Observations [2015]：
+- Assimilation of Tropical Cyclone Observations: Improving the Assimilation of TCVitals, Scatterometer Winds, and Dropwindsonde Observations [2015]：http://journals.ametsoc.org/doi/pdf/10.1175/MWR-D-14-00158.1
 - Concentric eyewall formation in Typhoon Sinlaku (2008) – Part II: Axisymmetric dynamical processes [2012]：http://journals.ametsoc.org/doi/pdf/10.1175/JAS-D-11-0114.1
 - Typhoon-position-oriented sensitivity analysis. Part I: Theory and verification [2013]：http://journals.ametsoc.org/doi/pdf/10.1175/JAS-D-12-0301.1
 - Estimating the impact of real observation in regional numerical weather prediction using an ensemble Kalman filter [2012]：http://journals.ametsoc.org/doi/pdf/10.1175/MWR-D-11-00205.1
