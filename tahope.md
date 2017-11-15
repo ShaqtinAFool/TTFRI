@@ -99,7 +99,7 @@
 - 「侵台颱風之GPS Dropsonde飛機偵查觀測實驗」(追風計畫)與『颱風及海洋物理及生物地球化學交互作用研究』之研究回顧 [20004]：https://dbahr.narlabs.org.tw/ATMOS/32-3/V32-N3-P275.pdf
 - 投落送與 QuikSCAT 資料同化對 WRF 模擬之影響 [2008]：https://dbahr.narlabs.org.tw/ATMOS/36-3/3-4.pdf
 - GPS 掩星與其他資料同化對台灣地區颱風和梅雨模擬之影響 [2010]：https://dbahr.narlabs.org.tw/ATMOS/39-1/39-1-2.pdf
-- 追風十年回顧 – 中年 Wu & LinPo 的奇幻歷程 [2013]：
+- 追風十年回顧 – 中年 Wu & LinPo 的奇幻歷程 [2013]：http://typhoon.as.ntu.edu.tw/wu_paper/Dotstar%2010years.pdf
 
 ## AMS(國外)
 - The impact of dropwindsonde data from the THORPEX–Pacific Area Regional Campaign and the NOAA Hurricane Field Program on tropical cyclone forecasts in the Global Forecast System [2011]：http://journals.ametsoc.org/doi/pdf/10.1175/2011MWR3634.1
