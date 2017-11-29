@@ -1,0 +1,25 @@
+/* span:target */
+#tab-1:target,
+#tab-2:target,
+#tab-3:target,
+#tab-4:target {
+    border: solid 1px red;
+}
+
+
+/*頁籤變換*/
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
+    border: solid 1px red;
+}
+
+
+/*頁籤內容顯示*/
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4 {
+    border: solid 1px red;
+}
