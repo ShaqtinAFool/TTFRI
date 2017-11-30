@@ -58,6 +58,13 @@ body {
 	margin-left: -100%;
 	position: relative;
     list-style: none;
+    border-right: 2px solid #4782b9;
+/*    max-height: auto;*/
+/*	background: #B5E3FF;*/
+}
+.tabs_left_side {
+    list-style: none;
+/*    max-height: auto;*/
 /*	background: #B5E3FF;*/
 }
 /* -------------------------- */
