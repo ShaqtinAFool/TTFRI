@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>TaHope</title>
+    <title>TaHOPE</title>
     <meta charset="UTF-8">
     <!-- 使用 RWD 功能 -->
     <meta name="viewport" content="initial-scale=1.0">
@@ -30,7 +30,11 @@
     <link rel="stylesheet" type="text/css" href="_css/tabsetting.css">
     
     <!-- 載入 JS -->
-    <script type="text/javascript" src="_js/bookmark.js"></script>
+    <!-- 載入 left side -->
+    <script type="text/javascript" src="_js/bookmark-sidebar.js"></script>  
+    <script type="text/javascript" src="_js/bookmark-rf.js"></script>
+    
+        
 </head>
 
 <body>
@@ -41,7 +45,8 @@
     <div class="header">
         <h1>台灣區域大氣水文觀測與預報實驗</h1>
         <h4>Taiwan-Area Atmospheric and Hydrological Observation and Prediction Experiment</h4>
-    </div><!-- .header-->
+    <!-- .header-->
+    </div>
     <!-- 主頁面 -->
     <!-- 主頁面 -->
     <!-- 主頁面 -->
@@ -51,13 +56,79 @@
             <!-- 內容 -->
             <!-- 內容 -->
             <div class="content">
-                <div class="abgne_tab">
+                <!-- 團隊介紹 -->
+                <div id="team">
+                    <h5>團隊介紹</h5>
+                    <div>
+                        <ul>
+                            <li>觀測實驗組</li>
+                            <ul>
+                                <li>召集人：林博雄</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>資料同化組</li>
+                            <ul>
+                                <li>召集人：楊舒芝</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>預報與分析組</li>
+                            <ul>
+                                <li>召集人：王重傑</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>水文應用組</li>
+                            <ul>
+                                <li>召集人：楊尊華</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>執行秘書</li>
+                            <ul>
+                                <li>陳嬿竹、劉嘉騏</li>
+                            </ul>
+                        </ul>
+                    </div>                    
+                </div>
+                <!-- 計畫目標 -->
+                <div id="proj">
+                    <h5>計畫目標</h5>
+                    <p>台灣區域大氣水文觀測與預報實驗(TaHOPE)為台灣與美國雙方共同推動的國際觀測聯合實驗(美方為PRECIP2020)，預計於2020以台灣區域為主體進行劇烈天氣(梅雨與颱風)觀測，所探討的研究主題，由大尺度的環境影響、中尺度的對流系統、乃至小尺度的雲物理過程，在台灣海島與高山陡坡特殊地形下，透過大氣水文觀測聯網導入先進大氣水及水文預報模式，同時進行即時或準即時同化分析與預報。</p>
+                </div>
+                <!-- 時程規劃 -->
+                <div id="schedule">
+                    <h5>時程規劃</h5>
+                    <img src="_img/time_schedule.png">
+                </div>
+                <!-- 科學議題 -->
+                <div id="subject">
+                    <h5>科學議題</h5>
+                    <ul>
+                        <li>風力預報
+                            <ul>
+                                <li>颱風假決策（民生議題、經濟損失）</li>
+                            </ul>
+                        </li>
+                        <li>颱風結構
+                            <ul>
+                                <li>強度預報</li>
+                                <li>風、雨分布
+                                    <ul><li>颱風路徑</li></ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 其他實驗成果 -->
+                <div id="other" class="abgne_tab">
+                    <h5>其他實驗成果</h5>
                     <ul class="tabs">
                         <li><a href="#tab1">TASSE</a></li>
                         <li><a href="#tab2">SoWMEX</a></li>
                         <li><a href="#tab3">DOTSTAR</a></li>
                         <li><a href="#tab4">NOAA P-3</a></li>
-                        <li><a href="#tab5">---</a></li>
                     </ul>
                     <div class="tab_container">
                         <div id="tab1" class="tab_content">
@@ -223,20 +294,25 @@
                         </div>
                     </div>
                 </div>
-            </div><!-- .content-->
-        </div><!-- .container-->
+            <!-- .content-->
+            </div>
+        <!-- .container-->
+        </div>
         <!-- 選單 -->
         <!-- 選單 -->
         <!-- 選單 -->
-
         <div class="left-sidebar">
-            <li><a href=""></a>團隊介紹</li>
-            <li><a href=""></a>計畫目標</li>
-            <li><a href=""></a>時程規劃</li>
-            <li><a href=""></a>時程規劃</li>
-            <li><a href=""></a>歷年實驗研究成果</li>
-        </div><!-- .left-sidebar -->
-    </div><!-- .middle-->
+            <ul class="tabs_left_side">
+                <li><a href="#team" title="團隊介紹">團隊介紹</a></li>
+                <li><a href="#proj" title="計畫目標">計畫目標</a></li>
+                <li><a href="#schedule" title="時程規劃">時程規劃</a></li>
+                <li><a href="#subject" title="科學議題">科學議題</a> </li>
+                <li><a href="#other" title="其他實驗成果">其他實驗成果</a></li>                
+            </ul>
+        <!-- .left-sidebar -->
+        </div>
+    <!-- .middle-->
+    </div>
     <!-- 頁尾 -->
     <!-- 頁尾 -->
     <!-- 頁尾 -->
@@ -251,8 +327,9 @@
                 </td>
             </tr>
         </table>
-    </div>    
-</div><!-- .wrapper-->
+    </div>  
+<!-- .wrapper-->
+</div>
 
     
     
