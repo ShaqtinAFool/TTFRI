@@ -11,7 +11,8 @@
     <!-- 載入 Bootstrap -->
     <link href="_css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Bootstrap 的 RWD 套件 -->
-    <link href="_css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> 
+    <link href="_css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    
     <!-- 載入 jQuery 套件 -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -26,13 +27,13 @@
     <!-- 載入 書籤 beauty -->
     <link href="_css/bookmarkbeauty.css" rel="stylesheet" type="text/css"> 
     
-    <link rel="stylesheet" type="text/css" href="_css/table.css">
-    <link rel="stylesheet" type="text/css" href="_css/tabsetting.css">
+    <link href="_css/table.css" rel="stylesheet" type="text/css">
+    <link href="_css/tabsetting.css" rel="stylesheet" type="text/css">
     
     <!-- 載入 JS -->
     <!-- 載入 left side -->
-    <script type="text/javascript" src="_js/bookmark-sidebar.js"></script>  
-    <script type="text/javascript" src="_js/bookmark-rf.js"></script>
+    <script src="_js/bookmark-sidebar.js" type="text/javascript"></script>  
+    <script src="_js/bookmark-rf.js" type="text/javascript"></script>
     
         
 </head>
@@ -57,7 +58,7 @@
             <!-- 內容 -->
             <div class="content">
                 <!-- 團隊介紹 -->
-                <div id="team">
+                <div id="team" class="abgne_tab">
                     <h5>團隊介紹</h5>
                     <div>
                         <ul>
@@ -93,29 +94,43 @@
                     </div>                    
                 </div>
                 <!-- 計畫目標 -->
-                <div id="proj">
+                <div id="proj" class="abgne_tab">
                     <h5>計畫目標</h5>
-                    <p>台灣區域大氣水文觀測與預報實驗(TaHOPE)為台灣與美國雙方共同推動的國際觀測聯合實驗(美方為PRECIP2020)，預計於2020以台灣區域為主體進行劇烈天氣(梅雨與颱風)觀測，所探討的研究主題，由大尺度的環境影響、中尺度的對流系統、乃至小尺度的雲物理過程，在台灣海島與高山陡坡特殊地形下，透過大氣水文觀測聯網導入先進大氣水及水文預報模式，同時進行即時或準即時同化分析與預報。</p>
+                    <p>台灣區域大氣水文觀測與預報實驗(TaHOPE)為台灣與美國雙方共同推動的國際觀測聯合實驗(美方為PRECIP2020)，預計於2020以台灣區域為主體進行劇烈天氣(<a href="https://zh.wikipedia.org/wiki/%E6%A2%85%E9%9B%A8" target="_blank">梅雨</a>與<a href="https://zh.wikipedia.org/wiki/%E9%A2%B1%E9%A2%A8" target="_blank">颱風</a>)觀測，所探討的研究主題，由大尺度的環境影響、<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%B0%BA%E5%BA%A6%E7%B3%BB%E7%BB%9F" target="_blank">中尺度</a>的對流系統、乃至<a href="https://baike.baidu.com/item/%E5%B0%8F%E5%B0%BA%E5%BA%A6%E7%B3%BB%E7%BB%9F" target="_blank">小尺度</a>的雲物理過程，在台灣海島與高山陡坡特殊地形下，透過大氣水文觀測聯網導入先進大氣水及水文預報模式，同時進行即時或準即時同化分析與預報。</p>
                 </div>
                 <!-- 時程規劃 -->
-                <div id="schedule">
+                <div id="schedule" class="abgne_tab">
                     <h5>時程規劃</h5>
                     <img src="_img/time_schedule.png">
                 </div>
                 <!-- 科學議題 -->
-                <div id="subject">
+                <div id="subject" class="abgne_tab">
                     <h5>科學議題</h5>
                     <ul>
                         <li>風力預報
                             <ul>
-                                <li>颱風假決策（民生議題、經濟損失）</li>
+                                <li>颱風假決策（民生議題、經濟損失）
+                                    <ul>
+                                        <li><a href="http://www.chinatimes.com/realtimenews/20170731004265-260407" target="_blank">前高雄副市長-颱風假決策經驗</a></li>
+                                        <li><a href="http://rsprc.ntu.edu.tw/zh-TW/technology-governance/290-risk-assessment-typhoon" target="_blank">風險社會與政策研究中心-颱風假不假？</a></li>
+                                        <li><a href="" target="_blank">菜市場政治學-放颱風假真能討好小確幸選民嗎？統計結果顯示：放對假才會</a></li>
+                                        <li><a href="https://tw.appledaily.com/headline/daily/20170731/37732974/" target="_blank">颱風假決策應有彈性</a></li>
+                                    </ul>
+                                </li>
+                                    
                             </ul>
                         </li>
                         <li>颱風結構
                             <ul>
-                                <li>強度預報</li>
-                                <li>風、雨分布
-                                    <ul><li>颱風路徑</li></ul>
+                                <li>強度預報
+                                    <ul>
+                                        <li><a href="http://www.metapp.org.tw/index.php/bossweathernews/422-2016-09-20-22-05-32" target="_blank">氣象應用推廣基金會-颱風的強度預測為何如此困難？</a></li>
+                                    </ul>
+                                </li>
+                                <li>颱風路徑
+                                    <ul>
+                                        <li><a href="http://pansci.asia/archives/101021" target="_blank">PanSci 泛科學-颱風預報偏了？其實我們對預報的誤解才偏很大</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>

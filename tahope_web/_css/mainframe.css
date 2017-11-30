@@ -51,7 +51,7 @@ body {
 }
 /* -------------------------- */
 /* -------------------------- */
-/* Left Sidebar */
+/* 左邊選單 */
 .left-sidebar {
 	float: left;
 	width: 250px;
@@ -64,8 +64,6 @@ body {
 }
 .tabs_left_side {
     list-style: none;
-/*    max-height: auto;*/
-/*	background: #B5E3FF;*/
 }
 /* -------------------------- */
 /* -------------------------- */
