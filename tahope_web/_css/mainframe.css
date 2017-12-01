@@ -10,9 +10,9 @@ body {
 .wrapper {
 /*    height:inherit;*/
 	width: 1000px;
-	margin: 0 auto;
-	min-height: 100%;
-	height: auto;
+	margin: auto;
+/*	min-height: 100%;*/
+/*	height: auto;*/
 /*    height: 100%;*/
 }
 /* -------------------------- */
@@ -28,10 +28,11 @@ body {
 /* -------------------------- */
 /* -------------------------- */
 /* Middle */
+/* 主選單 + 主內容 : 最外層 */
 .middle {
 	width: 100%;
     height: auto;
-	padding: 0 0 100px;
+	padding: 0 0 0px;
 	position: relative;
 }
 .middle:after {
@@ -39,29 +40,44 @@ body {
 	clear: both;
 	content: '';
 }
+/* 主選單 + 主內容 : 第二層 */
 .container {
 	width: 100%;
     height: 100%;
 	float: left;
 	overflow: hidden;
 }
+/* 主內容 */
 .content {
-	padding: 0 0 0 270px;
-    
+/*    相對位置*/
+	padding: 0 0 0 200px;
+/*    絕對位置*/
+/*    margin: 0px 0px 0px 270px;*/
+}
+/* 主內容 > 標題 */
+.content h5 {
+    text-align: center;
+}
+/* 主內容 > 圖片 */
+#skill img {
+    width: 100%;
 }
 /* -------------------------- */
 /* -------------------------- */
-/* 左邊選單 */
+/* 主選單 */
 .left-sidebar {
+    overflow: auto;
 	float: left;
 	width: 250px;
 	margin-left: -100%;
 	position: relative;
-    list-style: none;
-    border-right: 2px solid #4782b9;
 /*    max-height: auto;*/
+/*    測試用，所以上顏色*/
 /*	background: #B5E3FF;*/
+    height: inherit;
+/*    border-right: 2px solid #4782b9;*/
 }
+
 .tabs_left_side {
     list-style: none;
 }
