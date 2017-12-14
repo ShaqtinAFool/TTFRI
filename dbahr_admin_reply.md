@@ -335,7 +335,7 @@ https://dbahr.narlabs.org.tw/pages/FAQ.aspx
 		謝謝!
 
 ## Unicode問題
-	(1) 
+	(1)
 		您好，
 		可以下載notepad++
 		即可顯示內容
@@ -353,7 +353,7 @@ https://dbahr.narlabs.org.tw/pages/FAQ.aspx
 		Interim有到2016年資料，
 		若有需要可在提出需求，
 		謝謝
-		
+
 
 # 一般QA
 ## 還不是會員
@@ -389,6 +389,11 @@ https://dbahr.narlabs.org.tw/pages/FAQ.aspx
 	您的補件資訊應無上傳成功
 	在瀏覽以及選定檔案後，填完檔案說明後按新增，即可成功上傳!
 	圖說:https://dbahr.narlabs.org.tw/_images/pages/UploadInfoSOP.png
+	謝謝
+
+	(3)
+	您好，
+	學生需要補學生證正反面以便於審核
 	謝謝
 
 ### 已成為會員通知
