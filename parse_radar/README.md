@@ -40,14 +40,17 @@
 # 前言
 目前氣象局的雷達資料格式有 **Rainbow5** 和 **NEXRAD level2** 兩種，花蓮、墾丁、七股、五分山和軍方雷達屬於前者，部分時段五分山屬於後者。
 
-若下載的檔案為 **xxxdBZ.vol** 表示是Rainbow5的資料格式，使用編輯器打開檔案可以看到 XML 的檔頭(Fig 1)，裡面記錄著這個檔案的各種訊息和資料結構。
+若下載的檔案為 **xxxdBZ.vol** 表示是Rainbow5的資料格式，使用編輯器打開檔案可以看到 XML 的檔頭，裡面記錄著這個檔案的各種訊息和資料結構。  
+![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig01.png)
 
 若檔案是 **xxxx.VOL.001、xxxx.VOL.002** 等檔名則是屬 NEXRAD level2 的檔案結構，基本上它是個二進位檔所以打開看到的都會是亂碼。為了讓使用者可以使用這兩種資料，以下介紹網上社群寫好的讀檔程式的安裝和使用。  
 
-目前網路上開源且可以處理氣象局 Rainbow5 資料格式的程式如下(Fig 2)且僅有 TITAN 和 Wradlib 支援:
+目前網路上開源且可以處理氣象局 Rainbow5 資料格式的程式如下且僅有 TITAN 和 Wradlib 支援:
 
 - 其中 TITAN 是美國國家大氣研究中心(NCAR)的開源計畫，雖然支援較多檔案格式但安裝複雜且程式占較大空間(1GB以上)
-- Wradlib 則是 python 的模組之一，其安裝簡單且體積小、使用相對容易，但 wradlib 不支援 NEXRAD level2 的檔案格式，因此我們需要再安裝 Py-art 來支援讀取，安裝完這兩個模組大部分的雷達資料格式都可以使用了。
+- Wradlib 則是 python 的模組之一，其安裝簡單且體積小、使用相對容易，但 wradlib 不支援 NEXRAD level2 的檔案格式，因此我們需要再安裝 Py-art 來支援讀取，安裝完這兩個模組大部分的雷達資料格式都可以使用了。  
+
+![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig02.png)
 
 ---
 
