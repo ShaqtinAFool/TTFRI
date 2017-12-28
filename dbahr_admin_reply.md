@@ -65,6 +65,10 @@
 		可使用忘記密碼功能重設密碼：  
 		https://dbahr.narlabs.org.tw/pages/Help.aspx  
 		謝謝
+- 無法下載
+您好：  
+此原因為壓縮程式故障，目前已修復完畢  
+造成您的不便深感抱歉!!
 
 # 資料索取
 - 如何購買氣象局資料?  
@@ -350,8 +354,8 @@ http://e-service.cwb.gov.tw/HistoryDataQuery/index.jsp
 
 - 期刊
 
-	[資料更新] 第45期第1號大氣科學期刊上架通知  
-	大氣科學期刊更新至第45期第1號(106年3月)，敬祝各會員研究愉快。  
+	[資料更新] 第45期第2號大氣科學期刊上架通知  
+	大氣科學期刊更新至第45期第2號(106年6月)，敬祝各會員研究愉快。  
 	URL：https://dbahr.narlabs.org.tw/ATMOS/index.html
 
 - 測站
