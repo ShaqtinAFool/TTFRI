@@ -38,7 +38,7 @@
 ---
 
 # 前言
-目前氣象局的雷達資料格式ˇ有以下兩種
+目前氣象局的雷達資料格式有以下兩種
 - Rainbow5: 花蓮、墾丁、七股、五分山和軍方雷達  
 	若下載的檔案為 **xxxdBZ.vol** 表示是Rainbow5的資料格式，使用編輯器打開檔案可以看到 XML 的檔頭，裡面記錄著這個檔案的各種訊息和資料結構。  
 	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig01.png)
@@ -154,6 +154,7 @@
 不用時則關掉
 - (wradlib) $ source deactivate wradlib
 
+---
 
 # 讀檔
 ## Rainbow5
@@ -219,6 +220,8 @@ Fig 21的 Data 維度是[方位角, 徑向格點]組成，[方位角]的大小�
 ![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig28.png)
 
 ![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig29.png)
+
+---
 
 # 參考資料
 1. http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-D-13-00240.1
