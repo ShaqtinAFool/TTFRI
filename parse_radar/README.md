@@ -1,15 +1,18 @@
 <!-- MarkdownTOC -->
 
-- [作者](#%E4%BD%9C%E8%80%85)
-- [雷達代號](#%E9%9B%B7%E9%81%94%E4%BB%A3%E8%99%9F)
-- [前言](#%E5%89%8D%E8%A8%80)
-- [軟體與安裝](#%E8%BB%9F%E9%AB%94%E8%88%87%E5%AE%89%E8%A3%9D)
-	- [讀雷達資料所需的軟體和模組](#%E8%AE%80%E9%9B%B7%E9%81%94%E8%B3%87%E6%96%99%E6%89%80%E9%9C%80%E7%9A%84%E8%BB%9F%E9%AB%94%E5%92%8C%E6%A8%A1%E7%B5%84)
-	- [安裝流程](#%E5%AE%89%E8%A3%9D%E6%B5%81%E7%A8%8B)
-- [讀檔](#%E8%AE%80%E6%AA%94)
-	- [Rainbow5](#rainbow5)
-	- [NEXRAD level2](#nexrad-level2)
-- [參考資料](#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99)
+- 作者
+- 雷達代號
+- 前言
+- 軟體與安裝
+	- 讀雷達資料所需的軟體和模組
+	- 安裝流程
+		- Python
+		- Wradlib
+		- Py-ART
+- 讀檔
+	- Rainbow5
+	- NEXRAD level2
+- 參考資料
 
 <!-- /MarkdownTOC -->
 
@@ -74,7 +77,6 @@
 	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig03.png)
 
 1. Windows 設定環境變數，如下箭頭順序
-
 	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig04.png)
 
 ### Wradlib
@@ -84,14 +86,12 @@
 - Windows：在 Anaconda Prompt 作業
 1. 輸入以下資訊
 	- $ conda create --name wradlib
-
-	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig05.png)
+		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig05.png)
 1. 注意：若使用者本來的 python 是第 3 版，則是創建一個 python2 的環境
 	- $ conda create --name wradlib python=2.7
 1. 之後加入 wradlib 所在的軟體庫 conda-forge
 	- $ conda config --add channels conda-forge
-
-	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig06.png)
+		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig06.png)
 1. 最後完成後，如果是
 	1. linux 作業系統則輸入
 		- $ source activate wradlib
@@ -99,8 +99,7 @@
 		- activate wradlib
 
 	意思是啟用這個環境，換看到$或>前面出現(wradlib)的字樣(如 Fig 7)，表示啟用環境成功，我們接下來便是要將 wradlib 安裝在這個環境裡，故要啟用他，若不啟用則會裝在原本 python 的環境下，為避免軟體間衝突安裝在新的環境比較不容易出錯。
-
-	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig07.png)
+		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig07.png)
 
 1. 啟用完輸入
 	- (wradlib) $ conda install wradlib
@@ -108,13 +107,12 @@
 1. 即開始安裝了，等待安裝完成(如 Fig 8)，結束後輸入
 	- (wradlib) $ export GDAL_DATA=/path/to/anaconda/envs/wradlib/share/gdal
 
-	注意：/path/to/anaconda/要設定成自己的路徑而不是照打。  
+	注意：`/path/to/anaconda/`要設定成自己的路徑而不是照打。  
 	因為 wradlib 會使用到 gdal 中的函數庫，故要設定 gdal 的安裝位置讓他抓到，建議將  
-	gdal 環境變數，不然每次登出後再登入都要再設定一次，很麻煩。  
+	gdal 環境變數，不然每次登出後再登入都要再設定一次，很麻煩。
+		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig08.png)
 
-	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig08.png)
-
-	1. Linux 寫在~/.bashrc 這個檔案裡
+	1. Linux 寫在 ~/.bashrc 這個檔案裡
 		- (wradlib) > export GDAL_DATA=/path/to/anaconda/envs/wradlib/share/gdal
 
 	1. Windows 版本則是
@@ -128,13 +126,11 @@
 	- wradlib.\_\_version\_\_
 
 1. 即會輸出 wradlib 的版本，表示 wradlib 安裝成功。以上為官網的安裝方式，官網另有其他方式可以安裝，有興趣可到官網查看。
-
-![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig10.png)
-
-![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig11.png)
+	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig10.png)
+	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig11.png)
 
 ### Py-ART
-這個模組是用來處理 NEXRAD level2 的資料，在 wradlib 安裝中若是已經將 conda-forge 加入環境則直接輸入 
+這個模組是用來處理 NEXRAD level2 的資料，在 wradlib 安裝中若是已經將 conda-forge 加入環境則直接輸入
 - (wradlib) $ conda install arm_pyart，如 Fig 12 
 
 ![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig12.png)
