@@ -73,8 +73,7 @@
 	- vi ~/.bashrc
 	- export PATH=/usr/local/bin/anaconda2/bin:$PATH
 	- source ~/.bashrc
-
-	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig03.png)
+		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig03.png)
 
 1. Windows 設定環境變數，如下箭頭順序
 	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig04.png)
@@ -84,19 +83,16 @@
 
 - Linux：在終端機作業
 - Windows：在 Anaconda Prompt 作業
-1. 輸入以下資訊
-	- $ conda create --name wradlib
-		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig05.png)
+1. 輸入以下資訊：`$ conda create --name wradlib`
+	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig05.png)
 1. 注意：若使用者本來的 python 是第 3 版，則是創建一個 python2 的環境
 	- $ conda create --name wradlib python=2.7
 1. 之後加入 wradlib 所在的軟體庫 conda-forge
 	- $ conda config --add channels conda-forge
 		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig06.png)
 1. 最後完成後，如果是
-	1. linux 作業系統則輸入
-		- $ source activate wradlib
-	1. Windows 則是
-		- activate wradlib
+	1. linux 作業系統則輸入：`$ source activate wradlib`
+	1. Windows 則是`activate wradlib`
 
 	意思是啟用這個環境，換看到$或>前面出現(wradlib)的字樣(如 Fig 7)，表示啟用環境成功，我們接下來便是要將 wradlib 安裝在這個環境裡，故要啟用他，若不啟用則會裝在原本 python 的環境下，為避免軟體間衝突安裝在新的環境比較不容易出錯。
 		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig07.png)
@@ -117,8 +113,7 @@
 
 	1. Windows 版本則是
 		- [wradlib] > setx GDAL_DATA C:\path\to\anaconda\envs\wradlib\Library\share\gdal
-
-		![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig09.png)
+			![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig09.png)
 1. 以上步驟完成後 wradlib 就已經安裝完成了，此時可以測試 wradlib 是否安裝正確。執行 python 後進入 python interactive mode 後輸入
 	- import wradlib
 
@@ -131,17 +126,15 @@
 
 ### Py-ART
 這個模組是用來處理 NEXRAD level2 的資料，在 wradlib 安裝中若是已經將 conda-forge 加入環境則直接輸入
-- (wradlib) $ conda install arm_pyart，如 Fig 12 
-
-![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig12.png)
+- (wradlib) $ conda install arm_pyart，如 Fig 12
+	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig12.png)
 
 沒有 conda-forge 的話則是  
 - (wradlib) $ conda install –c conda-forge arm_pyart 
 
 把 wradlib 和 pyart 裝在同個環境後可一起用，不用再切換。建議再安裝一個 basemap，這是世界地圖的模組。
 - (wradlib) $ conda install basemap
-
-![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig13.png)
+	![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig13.png)
 
 以上就安裝好讀取雷達資料需要的模組了
 若以後要使用時請啟用 wradlib 環境
@@ -155,13 +148,10 @@
 # 讀檔
 ## Rainbow5
 前文有提到 rainbow5 檔案在檔頭會有一段資料內容的描述，wradlib 是依照這個檔頭的內容去讀取存在檔案內的二進位資料。讀檔前首先要載入需要的模組，然後選擇要讀的檔案。之後用 wradlib 中針對 rainbow5 格式的功能進行讀檔。
-
 ![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig14.png)
-
 ![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig15.png)
 
 圖中的字典是 python 的一個功能，由 read_Rainbow 回傳，和檔頭 xml 的對應(Fig 16)。
-
 ![image](https://github.com/ShaqtinAFool/TTFRI/blob/master/parse_radar/figure/fig16.png)
 
 這很像是書的目錄一樣，大目錄裡面會對應小目錄，根據目錄去找你要的東西，上面 rbdict['volume']['scan']['pargroup']['numele']的結果便是2。在 pargroup 下還有其他的子字典如 stoprange，如要讀取 stoprange 的值便是將上面改成 rbdict['volume']['scan']['pargroup']['stoprange']即可。
